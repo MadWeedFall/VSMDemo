@@ -7,24 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06CAD7511A300DC000EEB8D6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 06CAD7501A300DC000EEB8D6 /* main.c */; };
+		06CAD7621A300E1900EEB8D6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 06CAD75B1A300E1900EEB8D6 /* main.c */; };
+		06CAD76C1A302BCD00EEB8D6 /* BlurFragmentShader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06CAD7571A300E1900EEB8D6 /* BlurFragmentShader.fs */; };
+		06CAD76D1A302BCD00EEB8D6 /* BlurVertexShader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06CAD7581A300E1900EEB8D6 /* BlurVertexShader.vs */; };
+		06CAD76E1A302BCD00EEB8D6 /* FragmentShader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06CAD7591A300E1900EEB8D6 /* FragmentShader.fs */; };
+		06CAD76F1A302BCD00EEB8D6 /* StoreDepthFragmentShader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06CAD75C1A300E1900EEB8D6 /* StoreDepthFragmentShader.fs */; };
+		06CAD7701A302BCD00EEB8D6 /* StoreDepthVertexShader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06CAD75D1A300E1900EEB8D6 /* StoreDepthVertexShader.vs */; };
+		06CAD7711A302BCD00EEB8D6 /* VertexShader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06CAD75E1A300E1900EEB8D6 /* VertexShader.vs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		06CAD74B1A300DC000EEB8D6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = "/Users/ck03-007/Library/Developer/Xcode/DerivedData/VSMDemo-azucbzymplzeqaayxmyeqiofjtoz/Build/Products/Debug";
 			dstSubfolderSpec = 0;
 			files = (
+				06CAD76C1A302BCD00EEB8D6 /* BlurFragmentShader.fs in CopyFiles */,
+				06CAD76D1A302BCD00EEB8D6 /* BlurVertexShader.vs in CopyFiles */,
+				06CAD76E1A302BCD00EEB8D6 /* FragmentShader.fs in CopyFiles */,
+				06CAD76F1A302BCD00EEB8D6 /* StoreDepthFragmentShader.fs in CopyFiles */,
+				06CAD7701A302BCD00EEB8D6 /* StoreDepthVertexShader.vs in CopyFiles */,
+				06CAD7711A302BCD00EEB8D6 /* VertexShader.vs in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06CAD74D1A300DC000EEB8D6 /* VSMDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VSMDemo; sourceTree = BUILT_PRODUCTS_DIR; };
-		06CAD7501A300DC000EEB8D6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		06CAD7571A300E1900EEB8D6 /* BlurFragmentShader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BlurFragmentShader.fs; sourceTree = "<group>"; };
+		06CAD7581A300E1900EEB8D6 /* BlurVertexShader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BlurVertexShader.vs; sourceTree = "<group>"; };
+		06CAD7591A300E1900EEB8D6 /* FragmentShader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = FragmentShader.fs; sourceTree = "<group>"; };
+		06CAD75A1A300E1900EEB8D6 /* glext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glext.h; sourceTree = "<group>"; };
+		06CAD75B1A300E1900EEB8D6 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		06CAD75C1A300E1900EEB8D6 /* StoreDepthFragmentShader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = StoreDepthFragmentShader.fs; sourceTree = "<group>"; };
+		06CAD75D1A300E1900EEB8D6 /* StoreDepthVertexShader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = StoreDepthVertexShader.vs; sourceTree = "<group>"; };
+		06CAD75E1A300E1900EEB8D6 /* VertexShader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VertexShader.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +76,14 @@
 		06CAD74F1A300DC000EEB8D6 /* VSMDemo */ = {
 			isa = PBXGroup;
 			children = (
-				06CAD7501A300DC000EEB8D6 /* main.c */,
+				06CAD7571A300E1900EEB8D6 /* BlurFragmentShader.fs */,
+				06CAD7581A300E1900EEB8D6 /* BlurVertexShader.vs */,
+				06CAD7591A300E1900EEB8D6 /* FragmentShader.fs */,
+				06CAD75A1A300E1900EEB8D6 /* glext.h */,
+				06CAD75B1A300E1900EEB8D6 /* main.c */,
+				06CAD75C1A300E1900EEB8D6 /* StoreDepthFragmentShader.fs */,
+				06CAD75D1A300E1900EEB8D6 /* StoreDepthVertexShader.vs */,
+				06CAD75E1A300E1900EEB8D6 /* VertexShader.vs */,
 			);
 			path = VSMDemo;
 			sourceTree = "<group>";
@@ -118,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06CAD7511A300DC000EEB8D6 /* main.c in Sources */,
+				06CAD7621A300E1900EEB8D6 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
